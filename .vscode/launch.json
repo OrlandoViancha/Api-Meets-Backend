@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiRestApplication<api-rest>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "edu.uptc.apirest.ApiRestApplication",
+            "projectName": "api-rest",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
