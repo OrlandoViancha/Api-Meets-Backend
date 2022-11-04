@@ -15,7 +15,7 @@ public class RoomController {
         this.roomService = roomService;
     }
     @CrossOrigin(origins = "http://localhost:3000")
-    @GetMapping
+    @GetMapping("/getRooms")
     public List<Room> getRooms(){
 
         return roomService.getRooms();
@@ -29,7 +29,7 @@ public class RoomController {
     }
 
     @CrossOrigin(origins = "http://localhost:3000")
-    @PostMapping
+    @PostMapping("/addRoom")
     public Room save( @RequestBody Room room ){
 
         System.out.println(room.getDescription());
